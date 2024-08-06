@@ -7,27 +7,28 @@ This project aims to create a Go Package / Script to scan a a list or singular u
 
 
 ## Directory Structure
+```
+.
+├── subdomain-scanner/       # The entry point of the script that handles CLI interactions.
+│   ├── cmd/
+│   │   └── scanner/
+│   │       └── scanner.go   # Core logic for scanning and enumeration.
+│   ├── util/
+│   │   ├── constants.go     # Defines constants, including API endpoints, if any.
+│   │   └── parser.go        # Helps with parsing input and files.
+│   ├── internal/
+│   │   ├── api/
+│   │   │   └── client.go    # Handles third-party API interactions, if applicable.
+│   │   └── data/
+│   │       └── domains.txt  # Example input file listing domains to scan.
+│   └── test/
+│       └── scanner_test.go
+├── go.mod
+├── go.sum
+├── README.md                # Project documentation and guidelines
+└── PROJECT_PLAN.md          # This file outlines the project's plan and structure.
+```
 
-/subdomain-scanner
-|-- /cmd
-|   |-- main.go                  # The entry point of the script that handles CLI interactions.
-|-- /pkg
-|   |-- /scanner
-|       |-- scanner.go           # Core logic for scanning and enumeration.
-|   |-- /util
-|       |-- constants.go         # Defines constants, including API endpoints, if any.
-|       |-- parser.go            # Helps with parsing input and files.
-|-- /internal
-|   |-- /api
-|       |-- client.go            # Handles third-party API interactions, if applicable.
-|-- /data
-|   |-- domains.txt              # Example input file listing domains to scan.
-|-- /test
-|   |-- scanner_test.go          # Unit tests for scanner functionalities.
-|-- go.mod
-|-- go.sum
-|-- README.md                    # Project documentation and guidelines.
-|-- PROJECT_PLAN.md              # This file outlines the project's plan and structure.
 
 ## Components and Responsabilities
 
