@@ -1,0 +1,13 @@
+- ≡ƒôé __C:\\Users\\tayke\\LPNB\_SCRIPTS\\subscango__
+   - ≡ƒôä [README.md](README.md)
+   - ≡ƒôé __cmd__
+     - ≡ƒôä [main.go](cmd/main.go)
+   - ≡ƒôé __data__
+     - ≡ƒôä [subdomains.txt](data/subdomains.txt)
+   - ≡ƒôä [dir.md](dir.md)
+   - ≡ƒôä [go.mod](go.mod)
+   - ≡ƒôä [go.sum](go.sum)
+   - ≡ƒôé __internal__
+     - ≡ƒôé __scanner__
+       - ≡ƒôä [scanner.go](internal/scanner/scanner.go)
+
